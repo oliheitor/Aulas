@@ -1,0 +1,41 @@
+/* 
+sintaxe css:
+    seletor{
+        Propriedade: valor;  (o ideal é sempre fechar com ponto e vírgula mesmo sendo a última alteração onde o uso do ponto e vírgula é facultativo)
+    }
+
+colocando !important na frente da estilização quebra a hierarquia css. Faz com que a alteração em especifico passe a ter a maior força de estilização
+
+    
+        No CSS existem 4 maneiras para se escolher uma cor de fonte
+            1. digitando o nome da cor em inglês (red, pink, black, etc) - ctrl + espaço abre todas as opçoes de nome para as cores
+            2. rgb (red, green and blue) - é a combinação de cores que podem ser exibidas por um pixel a partir de sua variação de 0 até 256
+                Ex. color:rgb(50, 123, 252)
+            3. rgba (red, green, blue, alfa) onde alfa varia entre 0 e 1 alterando a opacidade e transparência da cor atribuida a fonte
+            4. hexadecimal (mais usado) - conjunto de 6 dígitos com números variando de 0 até 9 e letras variando de a até f (estudar regras depois)
+                Ex. color:#ff9922
+
+    
+*/
+h1{
+    color: darkgreen !important; /*cor da letra*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*muda o tipo da letra*/ 
+    font-size: 20px ;  /*tamanho da letra*/ /*no CSS sempre que houver um valor numérico pe preciso definir a unidade de medida*/
+    font-weight: normal; /*negrito - atribuir "normal" irá tirar a estilização*/
+    font-style: italic;
+    font-variant: small-caps; /*faz o efeito "versalete", deixa a primeira letra do texto maiúscula - super pouco usado*/
+}
+
+p{
+    /* 
+    agrupamento de estilizaçôes para "font"
+     para o agrupamento funcionar deve ser seguindo a seguinte regra
+        Estilo
+        Tamanho
+        Tipo da letra 
+
+    o espaçamento entre linhas pode ser agrupado com o tamnho da fonte
+        Ex. font-size: 20px(tamanho da letra)/50px (altura ou espaçamento entre linhas)
+    */
+    font:normal italic small-caps 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

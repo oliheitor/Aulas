@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elemento Visuais de Site</title>
+        <link rel="icon" href="../Imagens/icones/favicon.ico">
+            <!-- Favicon é a imagem que fica no canto da aba do navegador. O idal é que seu tamanho seja 16x16. Inserido sempre na área Head do html -->
+        <link rel="stylesheet"   href="../Aulas/css/aula4.css">     
+    </head>
+    <body>
+        <!-- 
+            Boas práticas ao usar imagens:
+            - Acessibilidade - Sempre definir o alt das imagens com uma breve descrção do que está acontecendo ou com a informação que ela contém, para deficientes visuais
+
+            - SEO (Search Engine Optimization) - Definir o alt das imagens ajuda na indexação do site
+
+            - Performance - imagens pesam muito. Sempre devemos compactar as imagens antes de colocar no site. Não escalonar imagens via código.
+         -->
+        <img src="../Imagens/Fotos/imagem10.1.jpg" alt="Pessoa com um cartão na mão mexendo em um notebook" width="500" height="334" loading="lazy">
+        <!-- Definir o loanding como "lazy" faz com que a imagem só seja carregada quando estiver em foco ou imediatamente se definido como "eager" -->
+        <figcaption>Foto: Fulano</figcaption> 
+
+        <br><br><br><br>
+
+        <!-- TABELAS --> 
+            <!-- tableless - técnica de css para estruturação de layouts sem tabelas.  -->
+            <table border="1">
+                <!-- Atribuir border para a tag table é um método deprecado de se utilizar bordas. Aqui usado apenas para estruturar o corpo da tabela -->
+
+                <thead>
+                    <tr>
+                        <!-- th centraliza e deixa em negrito o texto do cabeçalho da tabela -->
+
+                        <!-- Scope é um atrubuto de tag th que indica como a tabela deve ser lida, por col ou row, colunas ou linhas respectivamente -->
+                        <th scope="">Bike</th>
+                        <th scope="col">Ano</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Tarmac</td>
+                        <td>2022</td>
+                        <td>120k</td>
+                    </tr>
+                    <tr>
+                        <td>Caad</td>
+                        <td>2016</td>
+                        <td>7k</td>
+                    </tr>
+                    <tr>
+                        <td>Propel</td>
+                        <td>2020</td>
+                        <td>40k</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                    <!-- É possível usar "colspan" para mesclar colunas ou linhas em uma tabela ou deixar uma <td> em branco -->
+                        <td colspan="2">Total</td>
+                        <td>167k</td>
+                    </tr>
+                    <!-- 
+                        <td>EM BRANCO</td>
+                        <td>Total</td>
+                        <td>167k</td>
+                    -->
+                </tfoot>
+
+            </table>
+
+        <br><br><br><br>
+
+        <!-- IFRAME -->
+            <!-- permite puxar e inserir um site, link, localização ou arquivo dentro do site -->
+            <iframe src="https://theradavist.com/" width="100" height="100"></iframe>
+            <iframe src="https://www.youtube.com/watch?v=34PtZt8-ZV0&ab_channel=SAFABrian" width="100" height="100"></iframe>
+
+            <!-- Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.386241732984!2d-49.26961318498602!3d-25.425347483790677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce41476b2bc55%3A0x9e583478722cb1de!2sPasseio%20P%C3%BAblico!5e0!3m2!1spt-BR!2sbr!4v1675829272840!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br><br><br><br>
+
+        <!-- SOM/ MÚSICA -->
+            <audio src="" autoplay controls loop preload="none"></audio>
+            <!-- 
+                autoplay - quando o site abre a música ou som já começa a ser reproduzida
+                controls - coloca no site os controles do audio
+                loop - ao terminar a mpusica ou som começa outra vez
+                preload - a música ou é totalmente carregado antes de começar a ser reprodizido, evita que fique travando 
+             -->
+        
+        <br><br><br><br>
+
+        <!-- VÍDEO -->
+        <video src="" autoplay controls loop preload="none"></video>
+        <!-- basicamente as mesmas tags booleanas de áudio são usadas aqui. Preferencialmente por performance é indicado colocar um vídeo de algum site de stram como o youtube -->
+             
+    </body>
+</html>

@@ -1,0 +1,103 @@
+/* Reset do CSS */
+/* "*" (asterisco) é um seletor universal, mitas vezes empregado na informática para emglobar um todo, nesse caso todo o CSS */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+/* Os resets de CSS feitos dessa maneira "limpam" as configurações pré definidas pelo navegador. Empregado aqui somente com o viés didático */
+
+/* Agrupamento de Seletores */
+
+/*
+h1{
+    color: darkgrey;
+}
+h2{
+    color: darkgray;
+}
+p{
+    color: darkgrey;
+} 
+*/
+
+h1, h2, p{
+    color: darkgray;
+}
+
+/* Seletor de elemento Descendente */
+/* Nesse tipo de seletor podemos atacar a tag span descendente de outra tag. Se diz "Ataque a tag span somente quando dentro de... */
+h2 span{
+    color: green;
+    font-size: 30px;
+}
+p span{
+    color: blue;
+    font-size: 10px;
+}
+
+/* ID e Class */
+    /* 
+    Semelhanças:
+    -São atributos Globais;
+    -Os dois servem pra identificar elementos HTML para que possamos estiliza-los;
+    -Em ambos o valor é uma String;
+
+    Diferenças
+    -Quando queremos selecionar um elementos específico se usa ID;
+    -Para selecioanr vários elementos se usa CLASS;
+    -O valor de uma ID não pode se repetir na mesma página, o valor de uma Class pode;
+    -No efeito cascata uma ID tem o efeito mais forte que uma CLASS;
+    -ID possui somente uma string, CLASS pode ter varias string; 
+    -Para selecionar uma ID e uma CLASS se usa "#" e "." respectivamente.
+        Ex: 
+        ID
+            #exemplo{
+                color: #000
+            }
+
+        CLASS
+            .exemplo{
+                color: #000
+            }
+    */
+
+#teste2{
+    color: rgb(252, 121, 69);
+}
+#teste2 span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornflowerblue;
+}
+.teste1 span{
+    color: rgba(122, 20, 20, 0.74);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*
+CLASS com mais de uma string
+
+A
+.teste1{
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+B
+.teste3{
+    font-style: italic;
+} 
+*/
+
+/* A+B */
+.teste1.teste3{
+    color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5px;
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,52 @@
+  h1{
+    text-align: center;
+  }
+
+  h3{
+    color: #900;
+    font: bold small-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  p{
+    color: black;
+    font: 14px/20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 20px;
+  } 
+
+  figure{
+    text-align: center;
+  }
+
+  li{
+    font-size: 14px/20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    /* list-style-type: circle; */
+
+    /* Em alguns casos o designer pode colcoar no prjeto uma imagem nos "icones" de lista, no css é feito da seguinte forma */
+
+    list-style: inside url(../../Imagens/Logos/favicon.png);
+  }
+
+  h2{
+    font: bold 40px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  h4{
+    font: bold 30px Arial, Helvetica, sans-serif;
+  }
+
+  th{
+    font 14px/20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    color: #333;
+    /* Com essas alteraçês em th conseguimos alterar as estilizaçôes que acompanham a tag, sem abrir mão de usa-la, o que é semanticamente correto. */
+  }
+
+  /*DRY - don't repeat yourself - evitar fazer alteraçoes redundantes visando sempre as boas práticas*/
+

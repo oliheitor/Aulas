@@ -16,11 +16,11 @@ body{
     background-color: aliceblue;
 }
 
-
-
-
-
-
+.container{
+    width: 1200px;
+    background: #aaa;
+    margin: 0 auto;
+}
 
 /* Herença */
 /* Algumas propriedades do css são herdáveis (inherit), principalmente as propriedades de texto. */

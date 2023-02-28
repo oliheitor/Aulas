@@ -8,7 +8,6 @@
 .box1{
     width: 200px; /* LARGURA */
     height: 300px; /* ALTURA */
-    background-color: rgb(192, 191, 191) ;
     margin:10px auto ;
     padding: 10px;
     box-sizing: border-box;
@@ -45,7 +44,25 @@
 */
 
 /* PADDING */
-/* Padding é o espaçamento interno do box. Todas as variaçôes apresentadas para Margin também são válidas para Padding */
+/* Padding é o espaçamento interno do box. Todas as variaçôes apresentadas para Margin também são válidas para Padding. Aumenta o tamanho do box. */
+
+/*  BORDER */
+/* Assim como Padding, Border ou a borda também aumenta o tamanho da box.
+  - Pode ser Left, Right, Bottom e/ou Top.
+  - Possui 3 valores:
+        .tamanho;
+        .estilo;
+        .cor.
+  */
+  border: 10px solid darkolivegreen;
+
+/* BACKGROUNG */
+/* Muda o fundo do box */
+    background-color: beige;
+    background-image: url(../../Imagens/Logos/favicon.png);
+    background-repeat: no-repeat;
+    background-position: 100px 150px;
+    /* Em backgroung-postion podem ser atribuidos números negativos e tambem palavras indicando a posição desejada pra imagem */
 
 } 
 
@@ -56,4 +73,9 @@
     margin:10px auto;
     padding: 10px;
     /* Largura e Altura ajustadas para um Paddin de 10px. Sem utilizar box-sizing para "travar o tamanho da box */
+}
+
+.parallax{
+    height: 400px;
+    background: url(../../Imagens/Fotos/imagem9.jpg) no-repeat fixed;
 }

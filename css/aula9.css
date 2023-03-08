@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+.box1{
+    width: 300px;
+    height: 100px;
+    background: #555;
+    /* Overflow é o nome dad a área além dps limites do box. podemos manipular seu comportamento através da propriedade overflow, sendo possivel atribuir scroll ou hidden principalmente */
+    overflow: scroll;
+    /* Cursor muda o ícone de exibição da "setinha" do mouse  */
+    cursor: pointer;
+}

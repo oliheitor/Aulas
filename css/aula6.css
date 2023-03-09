@@ -6,6 +6,7 @@
     border: 0;
     list-style: none;
 }
+html{scroll-behavior: smooth;}
 /* Os resets de CSS feitos dessa maneira "limpam" as configurações pré definidas pelo navegador. Empregado aqui somente com o viés didático */
 
 /* Agrupamento de Seletores */

@@ -1,9 +1,191 @@
-*{
+ /* 
+  *{
     margin: 0;
     padding: 0;
     border: 0;
     list-style: none;
 }
+ */
+
+ /* Reset Correto */
+/* RESET */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside, 
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  line-height:1;
+}
+ol, 
+ul,
+li{list-style:none;}
+strong{font-family:Arial, Helvetica, sans-serif;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+  width:100%;
+}
+img{width:100%;}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+:hover{transition:.3s ease;}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+textarea,
+select{
+  border:0;
+  border-bottom:1px solid #000;
+  color:#000;
+  padding:8px 0;
+  font:14px Arial, Helvetica, sans-serif;
+  background:transparent;
+  width:100%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus{border-color:#900;}
+input[type="submit"],
+input[type="button"],
+button{
+  border:1px solid #000;
+  text-transform:uppercase;
+  padding:10px 30px;
+  color:#000;
+  font:12px Arial, Helvetica, sans-serif;
+  background:transparent;
+}
+input[type="text"]:placeholder,
+input[type="email"]:placeholder,
+input[type="tel"]:placeholder,
+input[type="search"]:placeholder,
+input[type="url"]:placeholder{color:#666;}
+
+/*
+Seletores CSS já vistos:
+-Elemento;
+-Classe;
+-ID;
+-Agrupamento;
+-Descendente.
+
+Novos seletores CSS:
+-Pseudo Classe 
+*/
+
+/* Pseudo Classes */
+/* Hover - A estilização acontece quando se passa o mouse em cima da seleção */
+li:hover{
+    color: #900;
+    font-size: 25px; 
+}
+
+/* Primeiro ou último filho */
+ul li:first-child{
+    font-size: 30px;
+}
+
+ /* Filho especifico, "odd" ou "even" */
+ ul li:nth-child(2){
+    background: lightgreen;
+ }
+    
+input{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Quando o elemento entra em foco */
+input:focus{
+    border-color: #900;
+}
+    :focus{outline: 0;}
+
+/* Pseudo Elemento */
+    /* texto */
+li::after{
+    content: ".RAW";
+}
+
+li::before{
+    /* imagem */
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    background: url(../../Imagens/Logos/favicon.png);
+}
+
+/* Seletores Avançados */
+    /* Seletor de elemento filho (específico, direto) */
+ul >li > a{
+    color: goldenrod
+}
+
 
 .box1{
     width: 300px;

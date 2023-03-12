@@ -1,14 +1,3 @@
- /* 
-  *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-}
- */
-
- /* Reset Correto */
-/* RESET */
 html,
 body,
 div,
@@ -124,80 +113,22 @@ input[type="tel"]:placeholder,
 input[type="search"]:placeholder,
 input[type="url"]:placeholder{color:#666;}
 
-/*
-Seletores CSS já vistos:
--Elemento;
--Classe;
--ID;
--Agrupamento;
--Descendente.
-
-Novos seletores CSS:
--Pseudo Classe 
-*/
-
-/* Pseudo Classes */
-/* Hover - A estilização acontece quando se passa o mouse em cima da seleção */
-li:hover{
-    color: #900;
-    font-size: 25px; 
+h1{
+    width: 520px;
+    height: 106px;
+    margin: 15px auto;
+   overflow: hidden;
 }
 
-/* Primeiro ou último filho */
-ul li:first-child{
-    font-size: 30px;
+.banner{
+    background: url(../../Imagens/Fotos/familia-na-praia.jpg) center no-repeat;
+    text-align: center;
+    background-size: 100%;
+    padding: 170px 0;
 }
 
- /* Filho especifico, "odd" ou "even" */
- ul li:nth-child(2){
-    background: lightgreen;
- }
-    
-input{
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
-}
-
-/* Quando o elemento entra em foco */
-input:focus{
-    border-color: #900;
-}
-    :focus{outline: 0;}
-
-/* Pseudo Elemento */
-    /* texto */
-li::after{
-    content: ".RAW";
-}
-
-li::before{
-    /* imagem */
-    content: "";
-    width: 16px;
-    height: 16px;
-    display: block;
-    background: url(../../Imagens/Logos/favicon.png);
-}
-
-/* Seletores Avançados */
-    /* Seletor de elemento filho (específico, direto) */
-ul >li > a{
-    color: goldenrod
-}
-
-
-.box1{
-    width: 300px;
-    height: 100px;
-    background: #555;
-    /* Overflow é o nome dad a área além dps limites do box. podemos manipular seu comportamento através da propriedade overflow, sendo possivel atribuir scroll ou hidden principalmente */
-    overflow: scroll;
-    /* Cursor muda o ícone de exibição da "setinha" do mouse  */
-    cursor: pointer;
-}
-
-/* Atacando o primeiro nível de uma lista */
-.firsr-level > li{
-  list-style: inside square;
+h2{
+    color: black;
+    font:bold 26px Arial, Helvetica, sans-serif;
+    background: rgba(255,255,255,0,7);
 }

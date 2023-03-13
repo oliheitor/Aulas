@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+/* 
+Técnicas de Tableless:
+-Position;
+-Float;
+-Display;
+-Flex;
+-Grid.
+*/
+
+/* Position */
+/* Usado quando um elento deve ficar em cima do outro */
+/* Valores possíveis para a propriedade Position:
+-Static (default);
+-Relative;
+-Absolute;
+-Fixed;
+-Sticky.
+
+Ao usar qualquer valor para position diferente de Static as seguinte propriedades são liberadas:
+-Top;
+-Left;
+-Right;
+-Bottom;
+-Z-idex.
+*/
+
+.p-box{
+    background-color:antiquewhite;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.p-box1{
+      background-color: black;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+}
+
+/* Pode-se dizer que na maioria dos casos o Relatve é usado para que o Absolute fique preso a ele, em um menu popup por exemplo */

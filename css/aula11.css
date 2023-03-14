@@ -47,6 +47,33 @@ Ao usar qualquer valor para position diferente de Static as seguinte propriedade
       position: absolute;
       right: 30px;
       bottom: 30px;
+      z-index: 1;
+}
+
+.p-box2{
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 0;
+}
+
+.fone{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 180px ;
+    line-height: 1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 50;   
+}
+
+.fone:hover{
+    right: 0;
 }
 
 /* Pode-se dizer que na maioria dos casos o Relatve é usado para que o Absolute fique preso a ele, em um menu popup por exemplo */

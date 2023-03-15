@@ -61,19 +61,60 @@ Ao usar qualquer valor para position diferente de Static as seguinte propriedade
 }
 
 .fone{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: black;
+    color: beige;
     padding: 10px;
-    width: 180px ;
+    width: 200px ;
     line-height: 1;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 50;   
+    right: -156px;
+    top: 50%;
+    z-index: 50;
+    transition: 1s ease all;   
 }
 
 .fone:hover{
     right: 0;
+    transition: 1s ease all; 
 }
 
 /* Pode-se dizer que na maioria dos casos o Relatve é usado para que o Absolute fique preso a ele, em um menu popup por exemplo */
+
+/* Float */
+/* Técnicade tableless para posicionar caixas uma do lado da outra */
+/* Existem três vlores possíveis para float:
+-Left;
+-Right (raramente usado);
+-None.
+*/
+
+.f-box{
+    background-color: lightcoral;
+    width: 500px;
+    height: 200px;
+}
+
+.f-box1{
+    background-color: lightgreen;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    float: left;
+}
+
+.f-box2{
+    background-color: lightgray;
+    width: 50px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+}
+
+/* Bug que o Float causa - Usar float nos elementos filhos,faz vom que o elemento pai perca sua altura normal. Para corrigir, existem duas formas:
+-Clear;
+-Oveflow. 
+
+.fix{
+    clear: both;
+
+}*/

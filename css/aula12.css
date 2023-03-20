@@ -70,7 +70,7 @@ main{
 }
 
 .f-box1{
-    width: 230px;
+    width: 230px; 
     height: 150px;
     margin: 10px;
     background: #990; 
@@ -81,4 +81,28 @@ main{
     height: 200px;
     margin: 10px;
     background:  #099;
+}
+
+.box1{order: 3;}
+.box10{order: 4;}
+
+/* Grid */
+/* Técnica de tableless que poderia ser utilizada para estruturar o site inteiro, mas geralmente é usado para mosaicos */
+
+.g-box{
+    background: #ccc;
+    display: grid;
+    grid-template-columns: 100px 100px ;
+}
+
+.g-box1{
+    width: 150px;
+    height: 200px;
+    background: #909;
+}
+
+.g-box2{
+    width: 300px;
+    height: 150px;
+    background: #900;
 }

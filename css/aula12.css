@@ -95,7 +95,7 @@ main{
     grid-template-columns: 100px 100px ;
 }
 
-.g-box1{
+.g-box1{ 
     width: 150px;
     height: 200px;
     background: #909;

@@ -74,3 +74,61 @@ a:hover{
   cursor:pointer;
 }
 :focus{outline:0;}
+
+/* Container */
+.container{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* Topo */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px; 
+}
+
+h1{
+  width: 250px;
+}
+
+/* Menu */
+nav ul{
+  display: flex;
+}
+
+nav li{
+  margin-left: 30px;
+}
+
+nav a{
+  text-transform: uppercase;
+  font: 18px Arial, Helvetica, sans-serif;
+}
+
+nav a:hover{
+  color: #990
+}
+
+/* Conteúdo */
+/* Banner do blog */
+.banner{
+  position: relative;
+}
+.banner h2{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  color: white;
+  font: bold 40px/1 Arial, Helvetica, sans-serif;
+  transform: translate(-50%, -50%);
+}
+
+/* Área de posts do blog */
+.posts-main{
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  top: -50px;
+}

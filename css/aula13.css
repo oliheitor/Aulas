@@ -131,4 +131,63 @@ nav a:hover{
   padding: 30px;
   position: relative;
   top: -50px;
+  gap: 40px;
+  display: flex;
 }
+
+.posts-main>article{
+  width: 75%;
+}
+
+.post-content{
+  display: flex;
+  gap: 20px;
+  font: 16px Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+}
+
+.post-content img{
+  width: fit-content;
+  /* Faz com que a imagem venha om o tamnho original */
+}
+
+.post-content h4{
+  margin: 10px 0 20px;
+  font: 18px Arial, helvetica, sans-serif;
+}
+
+.cat-1{color: darkred;}
+.cat-2{color: darkblue;}
+
+.post-content h3{
+  font: bold 30px Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.post-text{
+  color: #aaa;
+  font: 18px/25px Arial, helvetica, sans-serif;
+  margin-bottom: 10px;
+  height: 75px;
+  overflow: hidden;
+}
+
+/* Sidebar */
+aside{
+  width: 25%;
+}
+aside h3{
+  margin: 30px 0 20px;
+  font: bold, 25px, Arial, Helvetica, sans-serif
+}
+
+aside li{
+  padding: 10px 0;
+  line-height: 30px;
+}
+
+aside a{
+  color: darkblue;
+  font-size: 16px;
+}
+

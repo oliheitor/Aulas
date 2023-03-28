@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>Prática de Layout Responsivo</title>
+        <link rel="stylesheet" href="css/aula13.css">
+    </head>
+    <body>
+        <!-- Topo -->
+        <header class="container">
+            <h1>
+                <a href="/">
+                    <img src="../Imagens/Logos/logo-codeblue.png" alt="CodeBlue">
+                </a>
+            </h1>
+
+         <!-- Menu -->
+         <nav>
+            <div class="hamburguer">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+         </nav>
+        </header>
+        
+        <!-- Conteúdo -->
+        <main>
+            <!-- Banner do blog -->
+            <section class="banner">
+                <figure>
+                    <picture>
+                        <source media="(max-width: 1024px)" srcset="../Imagens/Fotos/familia-unida.jpg">
+                        <img src="../Imagens/Fotos/familia-na-praia.jpg" alt="banner do site">  
+                    </picture> 
+                </figure>
+                <h2>Blog</h2>
+            </section>
+        
+            <!-- Área de posts do blog -->
+            <section class="container posts-main">
+                <article>
+                    <article class="post-content">
+                        <figure>
+                            <img src="../Imagens/Fotos/imagem2-1.jpg " alt="Imagem do post">
+                        </figure>
+                        <article>
+                            <h4 class="cat-1">NEGÓCIOS</h4>
+                            <h3>Brincando com o fogo</h3>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae deleniti nostrum, aliquam quibusdam facere, minima dicta, a natus fugit amet sapiente adipisci autem saepe labore ipsa odit placeat voluptas optio.</p>
+                            <p><strong>billbordalio</strong>, 23 horas atrás</p>
+                        </article>
+                    </article>
+                
+                    <article class="post-content">
+                        <figure>
+                            <img src="../Imagens/Fotos/imagem2-1.jpg " alt="Imagem do post">
+                        </figure>
+                        <article>
+                            <h4 class="cat-2">NEGÓCIOS</h4>
+                            <h3>A necessidade é a mãe da invenção</h3>
+                            <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae deleniti nostrum, aliquam quibusdam facere, minima dicta, a natus fugit amet sapiente adipisci autem saepe labore ipsa odit placeat voluptas optio.</p>
+                            <p><strong>billbordalio</strong>, 23 horas atrás</p>
+                        </article>
+                    </article>
+                </article>
+
+                <!-- Sidebar -->
+                <aside>
+                    <h3>Posts recentes</h3>
+                    <ul>
+                        <li><a href="#">Brincando com o fogo</a></li>
+                        <li><a href="#">A necessidade é a mãe da inveção</a></li>
+                        <li><a href="#">Como produzir fotos criativas para sua empresa</a></li>
+                    </ul>
+                    <h3>Comentários</h3>
+                    <h3>Arquivos</h3>
+                </aside>
+            </section>
+        </main>
+    </body>
+</html>

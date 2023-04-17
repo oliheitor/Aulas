@@ -1,0 +1,135 @@
+/* RESET */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+u,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+article,
+aside, 
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+time,
+audio,
+video{
+  border:0;
+  font-size:100%;
+  font:inherit;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html{scroll-behavior:smooth;}
+body{
+  background:#fff;
+  color:#000;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1;
+}
+ol, 
+ul,
+li{list-style:none;}
+strong{font-weight: bold;}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+  width:100%;
+}
+a,
+a:hover{
+  color:#000;
+  text-decoration:none;
+  cursor:pointer;
+}
+:focus{outline:0;}
+
+/* Topo */
+h1{
+    text-align: center;
+    margin: 15px 0 14px;
+}
+
+/* Conteúdo Home */
+.banner-principal{margin-bottom: 96px;}
+
+.banner-principal img{width: 100%;}
+
+.container{
+  width: 1136px;
+  margin: 0 auto;
+}
+
+.artigo{
+  margin-bottom: 96px;
+  display:flex;
+}
+
+.artigo1 figure{
+  margin-right: 48px;
+}
+
+.artigo h2{
+  font: 700 48px Arial, Helvetica, sans-serif;
+  margin-bottom: 16px;
+  width: 80%;
+}
+
+.artigo1 h2{
+  margin-top: 46px;
+}
+
+.artigo p{
+  color: #4D4D4D;
+  line-height: 25px;
+  width: 66%;
+}
+
+.artigo2 article{
+  margin-left: 48px;
+}
+
+.artigo2 p{
+  width: 65%;
+}
+
+/* Conheça */
+.conheca h3{
+  margin: 32px 0;
+  text-align: center;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+

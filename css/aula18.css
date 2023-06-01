@@ -21,3 +21,19 @@
     width: 300px;
     height: 300px;
 }
+
+body{display: flex;}
+
+/* KEYFRAMES */
+/* Pode ser aplicado utilizando "from" e "to" ou porcentagens. Utilizando porcentagens é possível adicionar mais animaçoes ao longo de toda a animação, de 0% a 100% */
+@keyframes anima{
+    from{background: #007;}
+    to{background: #700;}
+}
+.box2{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background: #007;
+    animation: anima 3s infinite;
+}

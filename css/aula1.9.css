@@ -1,66 +1,65 @@
 /* Reset básico */
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
 }
 
 /* Container */
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* Topo */
-header{
-    height: 200px;
-    background: lightcoral;
+header {
+  height: 200px;
+  background: lightcoral;
 }
 
 /* Menu */
-nav{
-    background: lightslategray;
+nav {
+  background: lightslategray;
 }
 
-nav > ul{
-    display: flex;
-    justify-content: center;
+nav > ul {
+  display: flex;
+  justify-content: center;
 }
 
-nav a{
-    text-decoration: none;
-    color: #fff;
-    font: 18px/1 Arial, Helvetica, sans-serif;
-    display: block;
-    padding: 16px 20px;
-    transition: .1s ease all;
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font: 18px/1 Arial, Helvetica, sans-serif;
+  display: block;
+  padding: 16px 20px;
+  transition: 0.1s ease all;
 }
-nav a:hover, nav li:hover{
-    background: lightsalmon;
-    border-radius: 10px;
+nav a:hover,
+nav li:hover {
+  background: lightsalmon;
+  border-radius: 10px;
 }
-
 
 /* Menu popup */
-nav li{
-    position: relative;
+nav li {
+  position: relative;
 }
-nav li ul{
-    position: absolute;
-    background: lightslategray;
-    width: 100%;
-    text-align: center;
-    border-radius: 0 0 10px 10px;
-    display: none;
+nav li ul {
+  position: absolute;
+  background: lightslategray;
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  display: none;
 }
-nav li:hover ul{
-    display: block ;
+nav li:hover ul {
+  display: block;
 }
-
 
 /* Começo do conteúdo da Home */
-.banner{
-    height: 400px;
-    background-color: lightskyblue
+.banner {
+  height: 400px;
+  background-color: lightskyblue;
 }

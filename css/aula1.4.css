@@ -1,21 +1,20 @@
 /* O CSS do desktop é feito normalmente no início do documento */
 /* Desktop */
-body{
-    background: #009;
+body {
+  background: #009;
 }
 
 /* As Media Queries colocamos no final do documetno CSS */
 /* Tablet */
-@media screen and (min-width: 6001px) and (max-width:1025px){
-    body{
-        background: #009;
-    }
+@media screen and (min-width: 6001px) and (max-width: 1025px) {
+  body {
+    background: #009;
+  }
 }
 
 /* Celular */
-@media screen and (max-width: 600px){
-    body{
-        background: #900;
-    }
+@media screen and (max-width: 600px) {
+  body {
+    background: #900;
+  }
 }
-

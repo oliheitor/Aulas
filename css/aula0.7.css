@@ -1,49 +1,49 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
 }
 
-body{
-    font: 14px Arial, Helvetica, sans-serif;
-    color: rgb(20, 20, 20);
+body {
+  font: 14px Arial, Helvetica, sans-serif;
+  color: rgb(20, 20, 20);
 }
 
-.box1{
-    width: 200px;
-    height: 200px;
-    background-color: aliceblue;
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: aliceblue;
 }
 
-.container{
-    width: 1200px;
-    background: #aaa;
-    margin: 0 auto;
+.container {
+  width: 1200px;
+  background: #aaa;
+  margin: 0 auto;
 }
 
 /* Herença */
 /* Algumas propriedades do css são herdáveis (inherit), principalmente as propriedades de texto. */
 
-body{
-    color: blue;
+body {
+  color: blue;
 }
 
-h1{
-    color: green;
+h1 {
+  color: green;
 }
 
-span{
-    color: red;
+span {
+  color: red;
 }
 
-h2{
-    color: lightsalmon;
-}/*não pega*/
+h2 {
+  color: lightsalmon;
+} /*não pega*/
 
-h2 a{
-    color: lightblue;
-}/* link só estiliza se a gente atacar diretamente a tag a */
+h2 a {
+  color: lightblue;
+} /* link só estiliza se a gente atacar diretamente a tag a */
 
 /* Regras do efeito cascata */
 /* 

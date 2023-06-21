@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Links, meta-tags e CSS</title>
-        <link rel="stylesheet" href="../Aulas/css/aula6.css">
-        <!-- Meta tags sempre vão na região head do código -->
-        <!-- Backlnks - autoridade e relevância no goolge quando um site é apontado por outro, garantindo posiçôes nas pesqisas do google -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Links, meta-tags e CSS</title>
+    <link rel="stylesheet" href="../Aulas/css/aula6.css" />
+    <!-- Meta tags sempre vão na região head do código -->
+    <!-- Backlnks - autoridade e relevância no goolge quando um site é apontado por outro, garantindo posiçôes nas pesqisas do google -->
 
-        <!-- Meta-tags de SEO -->
-        <meta name="description" content="Aqui inserimos textos que tenham em media 150 caracteres para que fique bom na pesquisa do google">
-        <meta name="robots" content="index, follow"> <!-- Resumidamente aqui quer dizer "Ei, Google, pode indexar esse site e as páginas que se seguem ligadas a ela". Valores como noindex e nofollow também podem ser usados. -->
+    <!-- Meta-tags de SEO -->
+    <meta
+      name="description"
+      content="Aqui inserimos textos que tenham em media 150 caracteres para que fique bom na pesquisa do google"
+    />
+    <meta name="robots" content="index, follow" />
+    <!-- Resumidamente aqui quer dizer "Ei, Google, pode indexar esse site e as páginas que se seguem ligadas a ela". Valores como noindex e nofollow também podem ser usados. -->
 
-        <!-- Meta-tags de classificação -->
-        <meta name="rating" content="mature">
-    </head>
-    <body>
-        <h1>Texto de exemplo 1</h1>
-        <h2><span>Texto</span> de exemplo 2</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quaerat iusto, omnis id dolorem praesentium quos non cumque quia dolores nobis ut possimus ducimus a doloremque amet eaque optio quis.
-        </p>
-        <br>
-        <p class="teste1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum unde veritatis in aspernatur explicabo. Eveniet, <span>veniam natus</span> deserunt doloremque minus sint labore debitis commodi ratione necessitatibus velit culpa voluptatem deleniti!
-        </p>
-<br>
-        <h3 id="teste2">Texto exemplo <span>3</span></h3>
-<br>
-        <p class="teste1 teste3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Quas at illo officia</span> voluptate, ea reiciendis repellendus qui explicabo suscipit culpa eveniet minus soluta, asperiores beatae accusamus facilis modi maxime ipsam!
-        </p>
+    <!-- Meta-tags de classificação -->
+    <meta name="rating" content="mature" />
+  </head>
+  <body>
+    <h1>Texto de exemplo 1</h1>
+    <h2><span>Texto</span> de exemplo 2</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta quaerat
+      iusto, omnis id dolorem praesentium quos non cumque quia dolores nobis ut
+      possimus ducimus a doloremque amet eaque optio quis.
+    </p>
+    <br />
+    <p class="teste1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum unde
+      veritatis in aspernatur explicabo. Eveniet,
+      <span>veniam natus</span> deserunt doloremque minus sint labore debitis
+      commodi ratione necessitatibus velit culpa voluptatem deleniti!
+    </p>
+    <br />
+    <h3 id="teste2">Texto exemplo <span>3</span></h3>
+    <br />
+    <p class="teste1 teste3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <span>Quas at illo officia</span> voluptate, ea reiciendis repellendus qui
+      explicabo suscipit culpa eveniet minus soluta, asperiores beatae accusamus
+      facilis modi maxime ipsam!
+    </p>
 
-<br><br><br><br>
+    <br /><br /><br /><br />
 
-        <!-- Marcador de Âncora -->
-        <a name="topo"></a>
-        <p><a href="#fim">Vá para o fim da página</a></p>
+    <!-- Marcador de Âncora -->
+    <a name="topo"></a>
+    <p><a href="#fim">Vá para o fim da página</a></p>
 
-        <!-- tag link é um elemento inline, deve ser sempre inserido em um elemento de bloco -->
+    <!-- tag link é um elemento inline, deve ser sempre inserido em um elemento de bloco -->
 
-        <!-- Link Relativo - quando os links levam a rquivos d mesmo projeto, normalmente até me mesma pasta -->
-         <p><a href="aula5.html">Clique e vá para a Aula 5</a></p>
+    <!-- Link Relativo - quando os links levam a rquivos d mesmo projeto, normalmente até me mesma pasta -->
+    <p><a href="aula5.html">Clique e vá para a Aula 5</a></p>
 
-        <!-- Link Absoluto - quando o link leva a um arquivo ou site que não faz parte do projeto e/ou está fora do projeto. É de muita importacia colocar "target= "_blank" quando usr lninks absolutos para que a pessoa não saia do site ao clicar em um link, sessa forma o contúdo do link absoluto é aberto em uma nova guia -->
-        <p><a href="http://www.google.com.br" target="_blank">Veja isso no Google</a></p>
+    <!-- Link Absoluto - quando o link leva a um arquivo ou site que não faz parte do projeto e/ou está fora do projeto. É de muita importacia colocar "target= "_blank" quando usr lninks absolutos para que a pessoa não saia do site ao clicar em um link, sessa forma o contúdo do link absoluto é aberto em uma nova guia -->
+    <p>
+      <a href="http://www.google.com.br" target="_blank">Veja isso no Google</a>
+    </p>
 
-        <!-- Link de Download -->
-        <p><a href="~Arquivo~"></a>Baixe o Arquivo</p>
+    <!-- Link de Download -->
+    <p><a href="~Arquivo~"></a>Baixe o Arquivo</p>
 
-        <!-- Link de email -->
-        <p><a href="mailto: qualquer.coisa@gmail.com"></a> Fale Comigo</p>
+    <!-- Link de email -->
+    <p><a href="mailto: qualquer.coisa@gmail.com"></a> Fale Comigo</p>
 
-        <!-- Link de Whats -->
-        <p><a href="https://wa.me/55XXXXXXXXXXX"></a>Fale comigo no Whats</p>
+    <!-- Link de Whats -->
+    <p><a href="https://wa.me/55XXXXXXXXXXX"></a>Fale comigo no Whats</p>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-        <!-- Link de Âncora - necessario colocar um # anes do nome do marcador de âncora para que o código não fique marcado como um arquivo em um link de download-->
-        <p><a href="#topo">Voltar para o topo</a></p>
+    <!-- Link de Âncora - necessario colocar um # anes do nome do marcador de âncora para que o código não fique marcado como um arquivo em um link de download-->
+    <p><a href="#topo">Voltar para o topo</a></p>
 
-        <a name="fim"></a>
-    </body> 
-    </html>
+    <a name="fim"></a>
+  </body>
+</html>

@@ -1,4 +1,4 @@
- /* 
+/* 
   *{
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
  */
 
- /* Reset Correto */
+/* Reset Correto */
 /* RESET */
 html,
 body,
@@ -43,7 +43,7 @@ th,
 td,
 main,
 article,
-aside, 
+aside,
 figure,
 figcaption,
 footer,
@@ -52,54 +52,66 @@ nav,
 section,
 time,
 audio,
-video{
-  border:0;
-  font-size:100%;
-  font:inherit;
-  margin:0;
-  padding:0;
-  vertical-align:baseline;
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
-html{scroll-behavior:smooth;}
-body{
-  background:#fff;
-  color:#000;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:14px;
-  line-height:1;
+html {
+  scroll-behavior: smooth;
 }
-ol, 
+body {
+  background: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+ol,
 ul,
-li{list-style:none;}
-strong{font-family:Arial, Helvetica, sans-serif;}
-table{
-  border-collapse:collapse;
-  border-spacing:0;
-  width:100%;
+li {
+  list-style: none;
 }
-img{width:100%;}
+strong {
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
 a,
-a:hover{
-  color:#000;
-  text-decoration:none;
-  cursor:pointer;
+a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
-:focus{outline:0;}
-:hover{transition:.3s ease;}
+:focus {
+  outline: 0;
+}
+:hover {
+  transition: 0.3s ease;
+}
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="search"],
 input[type="url"],
 textarea,
-select{
-  border:0;
-  border-bottom:1px solid #000;
-  color:#000;
-  padding:8px 0;
-  font:14px Arial, Helvetica, sans-serif;
-  background:transparent;
-  width:100%;
+select {
+  border: 0;
+  border-bottom: 1px solid #000;
+  color: #000;
+  padding: 8px 0;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: transparent;
+  width: 100%;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -107,22 +119,26 @@ input[type="tel"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
 textarea:focus,
-select:focus{border-color:#900;}
+select:focus {
+  border-color: #900;
+}
 input[type="submit"],
 input[type="button"],
-button{
-  border:1px solid #000;
-  text-transform:uppercase;
-  padding:10px 30px;
-  color:#000;
-  font:12px Arial, Helvetica, sans-serif;
-  background:transparent;
+button {
+  border: 1px solid #000;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  color: #000;
+  font: 12px Arial, Helvetica, sans-serif;
+  background: transparent;
 }
 input[type="text"]:placeholder,
 input[type="email"]:placeholder,
 input[type="tel"]:placeholder,
 input[type="search"]:placeholder,
-input[type="url"]:placeholder{color:#666;}
+input[type="url"]:placeholder {
+  color: #666;
+}
 
 /*
 Seletores CSS já vistos:
@@ -138,66 +154,67 @@ Novos seletores CSS:
 
 /* Pseudo Classes */
 /* Hover - A estilização acontece quando se passa o mouse em cima da seleção */
-li:hover{
-    color: #900;
-    font-size: 25px; 
+li:hover {
+  color: #900;
+  font-size: 25px;
 }
 
 /* Primeiro ou último filho */
-ul li:first-child{
-    font-size: 30px;
+ul li:first-child {
+  font-size: 30px;
 }
 
- /* Filho especifico, "odd" ou "even" */
- ul li:nth-child(2){
-    background: lightgreen;
- }
-    
-input{
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+/* Filho especifico, "odd" ou "even" */
+ul li:nth-child(2) {
+  background: lightgreen;
+}
+
+input {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* Quando o elemento entra em foco */
-input:focus{
-    border-color: #900;
+input:focus {
+  border-color: #900;
 }
-    :focus{outline: 0;}
+:focus {
+  outline: 0;
+}
 
 /* Pseudo Elemento */
-    /* texto */
-li::after{
-    content: ".RAW";
+/* texto */
+li::after {
+  content: ".RAW";
 }
 
-li::before{
-    /* imagem */
-    content: "";
-    width: 16px;
-    height: 16px;
-    display: block;
-    background: url(../../Imagens/Logos/favicon.png);
+li::before {
+  /* imagem */
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: url(../../Imagens/Logos/favicon.png);
 }
 
 /* Seletores Avançados */
-    /* Seletor de elemento filho (específico, direto) */
-ul >li > a{
-    color: goldenrod
+/* Seletor de elemento filho (específico, direto) */
+ul > li > a {
+  color: goldenrod;
 }
 
-
-.box1{
-    width: 300px;
-    height: 100px;
-    background: #555;
-    /* Overflow é o nome dad a área além dps limites do box. podemos manipular seu comportamento através da propriedade overflow, sendo possivel atribuir scroll ou hidden principalmente */
-    overflow: scroll;
-    /* Cursor muda o ícone de exibição da "setinha" do mouse  */
-    cursor: pointer;
+.box1 {
+  width: 300px;
+  height: 100px;
+  background: #555;
+  /* Overflow é o nome dad a área além dps limites do box. podemos manipular seu comportamento através da propriedade overflow, sendo possivel atribuir scroll ou hidden principalmente */
+  overflow: scroll;
+  /* Cursor muda o ícone de exibição da "setinha" do mouse  */
+  cursor: pointer;
 }
 
 /* Atacando o primeiro nível de uma lista */
-.firsr-level > li{
+.firsr-level > li {
   list-style: inside square;
 }

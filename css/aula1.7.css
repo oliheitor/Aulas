@@ -1,68 +1,64 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    list-style: none;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
 }
 
-body{
-    display: flex;
+body {
+  display: flex;
 }
 
 /* Montando uma caixa para que possamos ver as alterações */
-.box1{
-    width: 300px;
-    height: 300px;
-    background: lightskyblue;
-    margin: 20px;
+.box1 {
+  width: 300px;
+  height: 300px;
+  background: lightskyblue;
+  margin: 20px;
 }
 
-.box2{
-    width: 300px;
-    height: 300px;
-    background: lightgreen;
-    margin: 20px;
+.box2 {
+  width: 300px;
+  height: 300px;
+  background: lightgreen;
+  margin: 20px;
 }
 
-h1{
-    margin: auto 20px;
-    font: 75px Arial, Helvetica, sans-serif;
-    color: lightcoral;
+h1 {
+  margin: auto 20px;
+  font: 75px Arial, Helvetica, sans-serif;
+  color: lightcoral;
 }
 
-img{
-    margin: auto 20px;
-    height: auto;
-    max-width: 30%;
+img {
+  margin: auto 20px;
+  height: auto;
+  max-width: 30%;
 }
 
-
-    /* CANTOS ARREDONDADOS */
+/* CANTOS ARREDONDADOS */
 /* Em ordem horária, a partir do canto superior esquerdo, os valores referentes aos cantos arrendodados podem ser declarados um a um */
 /* Declarando valor 50% para border-radius é posível fazer um circulo */
-.box1{
-    border-radius: 10px 30px 5px 0;
+.box1 {
+  border-radius: 10px 30px 5px 0;
 }
 
-
-    /* EFEITO SOMBRA */
+/* EFEITO SOMBRA */
 /* 4 Propriedades: deslocamento horizontal, deslocamento vertical, desfoque e cor. Sendo possível inseir mais de uma sombra no bloco e declarar um quinto valor "insert" cria uma sombra interna */
-.box2{
-    box-shadow: 15px 10px 5px lightgray;
+.box2 {
+  box-shadow: 15px 10px 5px lightgray;
 }
 
-
-    /* SOMBRA EM TEXTOS */
-h1{
-    text-shadow: -5px 5px 3px lightgrey;
+/* SOMBRA EM TEXTOS */
+h1 {
+  text-shadow: -5px 5px 3px lightgrey;
 }
-
 
 /* FILTER */
-img{
-    filter: grayscale(100%);
+img {
+  filter: grayscale(100%);
 }
 
-img:hover{
-    filter: grayscale(0);
+img:hover {
+  filter: grayscale(0);
 }

@@ -17,17 +17,18 @@ colocando !important na frente da estilização quebra a hierarquia css. Faz com
 
     
 */
-h1{
-    color: darkgreen !important; /*cor da letra*/
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*muda o tipo da letra*/ 
-    font-size: 20px ;  /*tamanho da letra*/ /*no CSS sempre que houver um valor numérico pe preciso definir a unidade de medida*/
-    font-weight: normal; /*negrito - atribuir "normal" irá tirar a estilização*/
-    font-style: italic;
-    font-variant: small-caps; /*faz o efeito "versalete", deixa a primeira letra do texto maiúscula - super pouco usado*/
+h1 {
+  color: darkgreen !important; /*cor da letra*/
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /*muda o tipo da letra*/
+  font-size: 20px; /*tamanho da letra*/ /*no CSS sempre que houver um valor numérico pe preciso definir a unidade de medida*/
+  font-weight: normal; /*negrito - atribuir "normal" irá tirar a estilização*/
+  font-style: italic;
+  font-variant: small-caps; /*faz o efeito "versalete", deixa a primeira letra do texto maiúscula - super pouco usado*/
 }
 
-p{
-    /* 
+p {
+  /* 
     agrupamento de estilizaçôes para "font"
      para o agrupamento funcionar deve ser seguindo a seguinte regra
         Estilo
@@ -37,5 +38,6 @@ p{
     o espaçamento entre linhas pode ser agrupado com o tamnho da fonte
         Ex. font-size: 20px(tamanho da letra)/50px (altura ou espaçamento entre linhas)
     */
-    font:normal italic small-caps 20px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font: normal italic small-caps 20px "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }

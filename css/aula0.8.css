@@ -1,29 +1,27 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
 }
 
-.box1{
-    width: 200px; /* LARGURA */
-    height: 300px; /* ALTURA */
-    margin:10px auto ;
-    padding: 10px;
-    box-sizing: border-box;
-    /* "auto" centraliza um elemento de bloco que tenha largura fixa ou absoluta */
-    /* Definir um tamanho para Padding faz com que a box aumente. Utilizando "box-sizing: border-box" o tamanho da box não é alteraado e o Padding continua estilizado */
+.box1 {
+  width: 200px; /* LARGURA */
+  height: 300px; /* ALTURA */
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  /* "auto" centraliza um elemento de bloco que tenha largura fixa ou absoluta */
+  /* Definir um tamanho para Padding faz com que a box aumente. Utilizando "box-sizing: border-box" o tamanho da box não é alteraado e o Padding continua estilizado */
 
-/* Quando usamos uma medida absoluta como PX, podemos chamar isso de medida fixa. Usando uma medida relativa como % as medidas podem ser chamadas de fluídas. */
+  /* Quando usamos uma medida absoluta como PX, podemos chamar isso de medida fixa. Usando uma medida relativa como % as medidas podem ser chamadas de fluídas. */
 
-/* Em muitos casos não pe necessário definir altura, deixando com que o próprio conteúdo aumente a altura do box */
+  /* Em muitos casos não pe necessário definir altura, deixando com que o próprio conteúdo aumente a altura do box */
 
+  /* MARGIN */
+  /* Margin ou "margem" é o espaçamento externo do box. Geralmetne usado para "empurrar" outros elemetos. */
 
-
-/* MARGIN */
-/* Margin ou "margem" é o espaçamento externo do box. Geralmetne usado para "empurrar" outros elemetos. */
-
-/* 
+  /* 
    - MARGIN DECLARADA PARA CADA LADO:
     margin-top: 20px;
     margin-left: 30px;
@@ -43,11 +41,11 @@
    margin: 20px, 30px
 */
 
-/* PADDING */
-/* Padding é o espaçamento interno do box. Todas as variaçôes apresentadas para Margin também são válidas para Padding. Aumenta o tamanho do box. */
+  /* PADDING */
+  /* Padding é o espaçamento interno do box. Todas as variaçôes apresentadas para Margin também são válidas para Padding. Aumenta o tamanho do box. */
 
-/*  BORDER */
-/* Assim como Padding, Border ou a borda também aumenta o tamanho da box.
+  /*  BORDER */
+  /* Assim como Padding, Border ou a borda também aumenta o tamanho da box.
   - Pode ser Left, Right, Bottom e/ou Top.
   - Possui 3 valores:
         .tamanho;
@@ -56,26 +54,25 @@
   */
   border: 10px solid darkolivegreen;
 
-/* BACKGROUNG */
-/* Muda o fundo do box */
-    background-color: beige;
-    background-image: url(../../Imagens/Logos/favicon.png);
-    background-repeat: no-repeat;
-    background-position: 100px 150px;
-    /* Em backgroung-postion podem ser atribuidos números negativos e tambem palavras indicando a posição desejada pra imagem */
-
-} 
-
-.box2{
-    width: 280px;
-    height: 380px;
-    background-color: rgb(181, 134, 73);
-    margin:10px auto;
-    padding: 10px;
-    /* Largura e Altura ajustadas para um Paddin de 10px. Sem utilizar box-sizing para "travar o tamanho da box */
+  /* BACKGROUNG */
+  /* Muda o fundo do box */
+  background-color: beige;
+  background-image: url(../../Imagens/Logos/favicon.png);
+  background-repeat: no-repeat;
+  background-position: 100px 150px;
+  /* Em backgroung-postion podem ser atribuidos números negativos e tambem palavras indicando a posição desejada pra imagem */
 }
 
-.parallax{
-    height: 400px;
-    background: url(../../Imagens/Fotos/imagem9.jpg) no-repeat fixed;
+.box2 {
+  width: 280px;
+  height: 380px;
+  background-color: rgb(181, 134, 73);
+  margin: 10px auto;
+  padding: 10px;
+  /* Largura e Altura ajustadas para um Paddin de 10px. Sem utilizar box-sizing para "travar o tamanho da box */
+}
+
+.parallax {
+  height: 400px;
+  background: url(../../Imagens/Fotos/imagem9.jpg) no-repeat fixed;
 }

@@ -32,7 +32,7 @@ th,
 td,
 main,
 article,
-aside, 
+aside,
 figure,
 figcaption,
 footer,
@@ -41,85 +41,97 @@ nav,
 section,
 time,
 audio,
-video{
-  border:0;
-  font-size:100%;
-  font:inherit;
-  margin:0;
-  padding:0;
-  vertical-align:baseline;
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
-html{scroll-behavior:smooth;}
-body{
-  background:#fff;
-  color:#000;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:14px;
-  line-height:1;
+html {
+  scroll-behavior: smooth;
 }
-ol, 
+body {
+  background: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+ol,
 ul,
-li{list-style:none;}
-strong{font-weight: bold ;}
-table{
-  border-collapse:collapse;
-  border-spacing:0;
-  width:100%;
+li {
+  list-style: none;
 }
-img{width:100%;}
+strong {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+img {
+  width: 100%;
+}
 a,
-a:hover{
-  color:#000;
-  text-decoration:none;
-  cursor:pointer;
+a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
-:focus{outline:0;}
+:focus {
+  outline: 0;
+}
 
 /* Container */
-.container{
+.container {
   max-width: 1100px;
   margin: 0 auto;
 }
 
 /* Topo */
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px; 
+  padding: 20px 30px;
 }
 
-h1{
+h1 {
   width: 250px;
 }
 
 /* Menu */
-.hamburguer{display:none}
-nav ul{
+.hamburguer {
+  display: none;
+}
+nav ul {
   display: flex;
 }
 
-nav li{
+nav li {
   margin-left: 30px;
 }
 
-nav a{
+nav a {
   text-transform: uppercase;
   font: 18px Arial, Helvetica, sans-serif;
 }
 
-nav a:hover{
-  color: #990
+nav a:hover {
+  color: #990;
 }
 
 /* Conteúdo */
 /* Banner do blog */
-.banner{
+.banner {
   position: relative;
 }
-.banner h2{
+.banner h2 {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   color: white;
   font: bold 40px/1 Arial, Helvetica, sans-serif;
@@ -127,7 +139,7 @@ nav a:hover{
 }
 
 /* Área de posts do blog */
-.posts-main{
+.posts-main {
   background: #fff;
   padding: 30px;
   position: relative;
@@ -136,36 +148,40 @@ nav a:hover{
   display: flex;
 }
 
-.posts-main>article{
+.posts-main > article {
   width: 75%;
 }
 
-.post-content{
+.post-content {
   display: flex;
   gap: 20px;
   font: 16px Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
 }
 
-.post-content img{
+.post-content img {
   width: fit-content;
   /* Faz com que a imagem venha om o tamnho original */
 }
 
-.post-content h4{
+.post-content h4 {
   margin: 10px 0 20px;
   font: 18px Arial, helvetica, sans-serif;
 }
 
-.cat-1{color: darkred;}
-.cat-2{color: darkblue;}
+.cat-1 {
+  color: darkred;
+}
+.cat-2 {
+  color: darkblue;
+}
 
-.post-content h3{
+.post-content h3 {
   font: bold 30px Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
 }
 
-.post-text{
+.post-text {
   color: #aaa;
   font: 18px/25px Arial, helvetica, sans-serif;
   margin-bottom: 10px;
@@ -174,71 +190,71 @@ nav a:hover{
 }
 
 /* Sidebar */
-aside{
+aside {
   width: 25%;
 }
-aside h3{
+aside h3 {
   margin: 30px 0 20px;
-  font: bold, 25px, Arial, Helvetica, sans-serif
+  font: bold, 25px, Arial, Helvetica, sans-serif;
 }
 
-aside li{
+aside li {
   padding: 10px 0;
   line-height: 30px;
 }
 
-aside a{
+aside a {
   color: darkblue;
   font-size: 16px;
 }
 
 /* Mobile */
 /* Sem aprender JS essa seção foi feita da melhor forma possível usando Hover */
-@media screen and (max-width: 1024px){
-    .container{
-        max-width: 100%;
-      }
-    .hamburguer p{
-        border-bottom: 3px solid #333;
-        margin: 3px 0;
-    }
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  .hamburguer p {
+    border-bottom: 3px solid #333;
+    margin: 3px 0;
+  }
 
-    nav{
-        position: relative;
-    }
+  nav {
+    position: relative;
+  }
 
-    nav ul{
-        position: absolute;
-        display: none;
-        left: -200%;
-        top: 100%;
-        z-index: 99;
-        background: #fff;
-    }
+  nav ul {
+    position: absolute;
+    display: none;
+    left: -200%;
+    top: 100%;
+    z-index: 99;
+    background: #fff;
+  }
 
-    nav:hover ul{
-        display: block;
-    }
+  nav:hover ul {
+    display: block;
+  }
 
-    nav li{
-        margin: 10px 0;
-    }
+  nav li {
+    margin: 10px 0;
+  }
 
-    header{
-        justify-content: space-around;
-    }
+  header {
+    justify-content: space-around;
+  }
 
-    .posts-main{
-        top: 10;
-        display: block;
-      }
-    
-    .posts-main > article, aside{
-        width: 100%;
-    }
+  .posts-main {
+    top: 10;
+    display: block;
+  }
 
-    .post-content{
-        display: block;
-    }
+  .posts-main > article,
+  aside {
+    width: 100%;
+  }
+
+  .post-content {
+    display: block;
+  }
 }
-

@@ -12,10 +12,35 @@
                 <ul>
                     <li>
                         <label for="nome"></label>
-                         <input type="text" id="nome" name="nome" placeholder=" Digite seu nome completo">
+                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autofocus autocomplete="off">
+                         <!-- 
+                            Autofocus é um atributo booleano que server para colocar o cursor no campo de preenchimento do formulário assim que a página for carregada.
+                            Autocomplete serve para ligar e desligar o preenchimento automatico de uma campo, muitoatribuido como "off" quando se trata de dados sensíveis como senha e dados de cartões de crédito.                         
+                        -->
                     </li>
+                    <li>
+                        <label for="email"></label>
+                         <input type="email" id="email" name="email" placeholder="Ex. contato@empresa.com.br">
+                    </li>
+
+                    <li>
+                        <label for="telefone"></label>
+                         <input type="tel" id="telefone" name="telefone" placeholder="Ex. (xx) xxxx-xxxx">
+                    </li>
+
+                    <li>
+                        <label for="senha"></label>
+                         <input type="password" id="senha" name="senha">
+                    </li>
+
+                    <li>
+                        <input type="submit" value="Enviar">
+                    </li>
+                   
                 </ul>
             </fieldset>
         </form>
     </body>
 </html>
+
+<!-- Aula pausada em 1h40 -->
